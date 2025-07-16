@@ -1,12 +1,12 @@
 $definitions.typ()$
 
-$typst-template.typ()$
+$gr-template.typ()$
 
 $for(header-includes)$
 $header-includes$
 $endfor$
 
-$typst-show.typ()$
+$gr-show.typ()$
 
 $for(include-before)$
 $include-before$
