@@ -1,0 +1,11 @@
+title: Grbook
+author: Giuseppe Ragusa
+version: 1.0.0
+quarto-required: ">=1.7.0"
+contributes:
+  formats:
+    typst:
+      template: template.typ
+      template-partials:
+        - gr-template.typ
+        - gr-show.typ
