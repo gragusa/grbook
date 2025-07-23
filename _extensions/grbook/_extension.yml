@@ -9,3 +9,8 @@ contributes:
       template-partials:
         - gr-template.typ
         - gr-show.typ
+        - gr-marginalia.typ
+        - gr-theorems.typ
+        - gr-code.typ
+      filters:
+        - functions.lua

@@ -47,7 +47,20 @@
            font: font,
            size: fontsize)
   set heading(numbering: sectionnumbering)
-
+  show heading: it => {
+    set text(
+      font: heading-family, 
+      style: "italic",        // Make headings italic like Tufte
+      weight: "regular",       // Normal weight, not bold
+      size: if it.level == 1 { 1.4em } else if it.level == 2 { 1.2em } else { 1em }
+    )
+    
+    // Add space before and after headings
+    block(
+      above: if it.level == 1 { 2em } else { 1.5em },
+      below: if it.level == 1 { 1.75em } else { 1.25em }
+    )[#it]
+  }
 
   if toc {
     let title = if toc_title == none {

@@ -11,7 +11,7 @@
 --   - etc
 
 -- Debug control - set to true to see debug messages
-local debug = true
+local debug = false
 
 -- Debug: Print when filter loads
 if debug then
